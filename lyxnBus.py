@@ -67,7 +67,7 @@ while True:
     try:
         data = resp.json()
     except:
-        print "This is an error message!"
+        print ("This is an error message!")
         continue
     data = resp.json()
     data2=json_normalize(data)

@@ -55,8 +55,6 @@ def createFile():
     else:
         with open('data/bus/'+str(start_time)+'.csv', 'wb') as outcsv:
             writer = csv.DictWriter(outcsv, fieldnames = buscsvKeys)
-            writer.writeheader()
-        outcsv.close()
         print("file data/busRaw.csv not exist,created")
 counter=0;
     

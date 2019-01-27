@@ -9,3 +9,16 @@
     ```bash
     python3 lynxBus.py 
     ``` 
+## Data format
+   1. bus/*csv
+       'index'
+       'fields.type', 
+       'heading', 
+       'id', 
+       'lastStop',
+       'lastUpdate',
+       'lat',
+       'lon',
+       'name',
+       'route'
+        ]

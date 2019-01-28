@@ -36,7 +36,7 @@ def createFile():
     csvValuse=[None, None,None,None,None,None,None,None,None]
 
 
-if os.path.exists('data/routes/'+str(start_time)+'.csv'):
+    if os.path.exists('data/routes/'+str(start_time)+'.csv'):
     print("file data/routes/"+str(start_time)+".csv exist")
     else:
         with open('data/routes/'+str(start_time)+'.csv', 'wb') as outcsv:

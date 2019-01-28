@@ -45,7 +45,8 @@ def createFile():
         'lat',
         'lon',
         'name',
-        'route'
+        'route',
+        'time'
         ]
     csvValuse=[None, None,None,None,None,None,None,None,None]
 
@@ -80,6 +81,7 @@ while True:
         'name',
         'route'
     ]) 
-    df.to_csv('data/bus/'+str(start_time)+'.csv', mode='a', header=False)
+    df['time'] = datetime.now()
+    df.to_csv('data/bus/'+str(start_time)+'.csv', mode='a', header=True)
     time.sleep(3)
     print(df)

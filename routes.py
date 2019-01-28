@@ -37,7 +37,7 @@ def createFile():
 
 
     if os.path.exists('data/routes/'+str(start_time)+'.csv'):
-    print("file data/routes/"+str(start_time)+".csv exist")
+        print("file data/routes/"+str(start_time)+".csv exist")
     else:
         with open('data/routes/'+str(start_time)+'.csv', 'wb') as outcsv:
             #writer = csv.DictWriter(outcsv, fieldnames = buscsvKeys)
